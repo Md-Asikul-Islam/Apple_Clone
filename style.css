@@ -81,7 +81,7 @@ body{
 }
 
 .text-part-1 {
-    position: absolute;
+    position: absolute;         // obsellete 
     top: 15%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
@@ -113,13 +113,14 @@ color: #fff;
 }
 
 .text-part-1>h1{
-
 font-size: 3rem;
+font-weight: 600;
 margin-bottom: 0.5rem;
 }
 
 .text-part-1>p{
     font-size: 1.5rem;
+    font-weight: 600;
     padding-top: 1rem;
     margin-bottom: 2rem;
 }
@@ -146,3 +147,18 @@ margin-bottom: 0.5rem;
     background-color:var(--btn-hover) ;
     transform: translate(0.3rem, 0.3rem) rotate(0.01deg) scale(0.9) ;
 }
+
+.air-bottom-div{
+    position: absolute;
+    bottom: 5%;
+}
+
+.air-bottom-div>p{
+font-size : 1.5rem;
+font-weight: 400;
+background : linear-gradient(to right, #0000ff, #ff0000);
+background-clip : text;
+color: transparent ;
+}
+
+/*     product    */
