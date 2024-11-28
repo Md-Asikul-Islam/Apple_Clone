@@ -63,3 +63,26 @@ body{
     max-height: 1.4rem;
 
 }
+
+/* Hero-section */
+
+
+.part-1>img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    
+
+}
+.part-1 {
+    position: relative;
+}
+
+.text-part-1 {
+    position: absolute;
+    top: 15%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    color: white; 
+}
