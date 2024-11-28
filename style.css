@@ -8,6 +8,8 @@
 --container-background: #ffff ;
 --nav-background:#F5F5F7 ;
 --color:#0000;
+--btn-background:#4475bf;
+--btn-hover:#335bd4;
 }
 
 body{
@@ -54,8 +56,7 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    place-content: center;
     gap: 2rem; 
 }
 
@@ -74,7 +75,8 @@ body{
     
 
 }
-.part-1 {
+
+/* .part-1 {
     position: relative;
 }
 
@@ -85,4 +87,62 @@ body{
     transform: translate(-50%, -50%); 
     text-align: center; 
     color: white; 
+} */
+
+.part-1{
+width: 100%;
+height: auto;
+position: relative;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+place-content: center;
+gap: 1rem;
+overflow: hidden;
+margin-bottom: 2rem;
+}
+
+.text-part-1 {
+display: flex;
+flex-direction: column;
+position: absolute;
+top: 2%;
+padding: 3rem 1rem;
+text-align: center;
+color: #fff;
+}
+
+.text-part-1>h1{
+
+font-size: 3rem;
+margin-bottom: 0.5rem;
+}
+
+.text-part-1>p{
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.btn-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    place-content: center;
+    gap: 1.5rem;
+}
+
+.btn-div>button{
+    padding: 0.8rem 1rem;
+    background-color: var(--btn-background);
+    color: #fff;
+    border-radius: 0.8rem;
+    border: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.5s ease-in-out;
+}
+
+.btn-div>button:hover{
+    background-color:var(--btn-hover) ;
+    transform: translate(0.3rem, 0.3rem) rotate(0.01deg) scale(0.9) ;
 }
